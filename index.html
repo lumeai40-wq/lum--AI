@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LuméAI – Smart Automation for Stylish Brands</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="favicon.ico" />
+
+    <!-- AOS animation library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <style>
+        body {
+            font-family: "Inter", sans-serif;
+            background-color: #0b0b0b;
+            color: #f5f5f5;
+            overflow-x: hidden;
+        }
+
+        .gradient-text {
+            background: linear-gradient(90deg, #c5a572, #fff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .glow:hover {
+            box-shadow: 0 0 25px rgba(197, 165, 114, 0.4);
+        }
+
+        .floating {
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            background: radial-gradient(circle, rgba(197, 165, 114, 0.15), transparent);
+            filter: blur(60px);
+            border-radius: 50%;
+            animation: float 12s ease-in-out infinite;
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0) translateX(0);
+            }
+
+            50% {
+                transform: translateY(-40px) translateX(40px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- FLOATING BACKGROUND GLOW -->
+    <div class="floating top-40 left-20"></div>
+    <div class="floating bottom-40 right-20"></div>
+
+    <!-- HEADER -->
+    <header
+        class="flex justify-between items-center px-6 py-4 border-b border-gray-800 backdrop-blur-md bg-black/30 sticky top-0 z-50">
+        <h1 class="text-2xl font-semibold tracking-wide gradient-text">LuméAI</h1>
+        <nav class="space-x-6 hidden md:flex">
+            <a href="#about" class="hover:text-[#c5a572]">About</a>
+            <a href="#services" class="hover:text-[#c5a572]">Services</a>
+            <a href="#packages" class="hover:text-[#c5a572]">Packages</a>
+            <a href="#contact" class="hover:text-[#c5a572]">Contact</a>
+        </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="text-center py-24 px-6 bg-gradient-to-b from-black to-[#141414]">
+        <h2 class="text-5xl md:text-6xl font-bold mb-6 gradient-text" data-aos="fade-up">
+            Illuminate your fashion brand with intelligent automation.
+        </h2>
+        <p class="max-w-2xl mx-auto text-gray-400 text-lg mb-8" data-aos="fade-up" data-aos-delay="200">
+            LuméAI merges luxury aesthetics with advanced AI systems — helping fashion businesses automate content,
+            marketing, and operations effortlessly.
+        </p>
+        <a href="#contact"
+            class="bg-[#c5a572] glow text-black font-semibold px-8 py-3 rounded-full transition hover:bg-[#e4c989]"
+            data-aos="fade-up" data-aos-delay="400">
+            Work With Us
+        </a>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="py-24 px-6 text-center max-w-4xl mx-auto">
+        <h3 class="text-4xl font-semibold mb-6 gradient-text" data-aos="fade-up">Smart systems for bold fashion brands.
+        </h3>
+        <p class="text-gray-400 leading-relaxed" data-aos="fade-up" data-aos-delay="200">
+            LuméAI helps small fashion businesses run like luxury powerhouses — using intelligent automation that
+            handles your marketing, content, and customer experience.
+            <br /><br />
+            Technology should feel elegant, not complicated. Your brand should look as intelligent as it performs. We
+            blend high-tech precision with creative luxury, giving you the systems to scale beautifully.
+        </p>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="bg-[#0f0f0f] py-24 px-6">
+        <h3 class="text-center text-4xl font-semibold mb-12 gradient-text" data-aos="fade-up">Intelligent automation for
+            every layer of your brand.</h3>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto text-gray-300">
+            <div class="p-6 bg-[#141414] rounded-2xl hover:border-[#c5a572] border border-transparent transition"
+                data-aos="fade-up">
+                <h4 class="text-xl font-semibold mb-3 text-[#c5a572]">AI Brand Identity</h4>
+                <p>AI-powered naming, moodboards, color palettes, and copy to create your perfect brand image.</p>
+            </div>
+            <div class="p-6 bg-[#141414] rounded-2xl hover:border-[#c5a572] border border-transparent transition"
+                data-aos="fade-up" data-aos-delay="100">
+                <h4 class="text-xl font-semibold mb-3 text-[#c5a572]">E-Commerce Automation</h4>
+                <p>Product descriptions, chatbots, and automated emails — your store runs while you create.</p>
+            </div>
+            <div class="p-6 bg-[#141414] rounded-2xl hover:border-[#c5a572] border border-transparent transition"
+                data-aos="fade-up" data-aos-delay="200">
+                <h4 class="text-xl font-semibold mb-3 text-[#c5a572]">Social Media AI</h4>
+                <p>Content calendars, captions, hashtags, and auto-posting across Instagram & TikTok.</p>
+            </div>
+            <div class="p-6 bg-[#141414] rounded-2xl hover:border-[#c5a572] border border-transparent transition"
+                data-aos="fade-up" data-aos-delay="300">
+                <h4 class="text-xl font-semibold mb-3 text-[#c5a572]">Marketing & Sales Automation</h4>
+                <p>Email campaigns, ad copy, CRM, and smart retargeting to convert followers into buyers.</p>
+            </div>
+            <div class="p-6 bg-[#141414] rounded-2xl hover:border-[#c5a572] border border-transparent transition"
+                data-aos="fade-up" data-aos-delay="400">
+                <h4 class="text-xl font-semibold mb-3 text-[#c5a572]">Workflow Automation</h4>
+                <p>Automate daily tasks like order tracking, supplier updates, and reports — hands-free operations.</p>
+            </div>
+            <div class="p-6 bg-[#141414] rounded-2xl hover:border-[#c5a572] border border-transparent transition"
+                data-aos="fade-up" data-aos-delay="500">
+                <h4 class="text-xl font-semibold mb-3 text-[#c5a572]">AI Insights & Analytics</h4>
+                <p>Get instant clarity with dashboards, performance reports, and trend forecasts powered by AI.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PACKAGES -->
+    <section id="packages" class="py-24 px-6 text-center max-w-6xl mx-auto">
+        <h3 class="text-4xl font-semibold mb-12 gradient-text" data-aos="fade-up">Choose your level of intelligence.
+        </h3>
+        <div class="grid md:grid-cols-3 gap-10">
+            <div class="bg-[#141414] p-8 rounded-2xl border border-gray-800 hover:border-[#c5a572] transition"
+                data-aos="fade-up">
+                <h4 class="text-2xl mb-4 font-semibold text-[#c5a572]">Essentials</h4>
+                <p class="text-gray-400 mb-4">Smart social presence for new brands.</p>
+                <ul class="text-sm text-gray-300 space-y-2 mb-6">
+                    <li>✔ AI content + captions</li>
+                    <li>✔ Automated content calendar</li>
+                    <li>✔ Monthly report</li>
+                </ul>
+                <p class="font-semibold text-xl">$250–$500/mo</p>
+            </div>
+
+            <div class="bg-[#141414] p-8 rounded-2xl border border-gray-800 hover:border-[#c5a572] transition"
+                data-aos="fade-up" data-aos-delay="100">
+                <h4 class="text-2xl mb-4 font-semibold text-[#c5a572]">Growth Suite</h4>
+                <p class="text-gray-400 mb-4">Automation for growing boutiques.</p>
+                <ul class="text-sm text-gray-300 space-y-2 mb-6">
+                    <li>✔ Everything in Essentials</li>
+                    <li>✔ Chatbot + email automation</li>
+                    <li>✔ Analytics dashboard</li>
+                </ul>
+                <p class="font-semibold text-xl">$700–$1,200/mo</p>
+            </div>
+
+            <div class="bg-[#141414] p-8 rounded-2xl border border-gray-800 hover:border-[#c5a572] transition"
+                data-aos="fade-up" data-aos-delay="200">
+                <h4 class="text-2xl mb-4 font-semibold text-[#c5a572]">Luxury Automation</h4>
+                <p class="text-gray-400 mb-4">Full systems for high-end brands.</p>
+                <ul class="text-sm text-gray-300 space-y-2 mb-6">
+                    <li>✔ Complete automation setup</li>
+                    <li>✔ Optimization & strategy</li>
+                    <li>✔ AI marketing integration</li>
+                </ul>
+                <p class="font-semibold text-xl">$1,500–$3,000/mo</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="bg-gradient-to-t from-black to-[#141414] py-24 px-6 text-center">
+        <h3 class="text-4xl font-semibold mb-8 gradient-text" data-aos="fade-up">Let’s build your smart fashion brand.
+        </h3>
+        <p class="text-gray-400 mb-10" data-aos="fade-up" data-aos-delay="200">
+            Contact LuméAI to start automating your brand with elegance and precision.
+        </p>
+        <form action="https://formspree.io/f/xrbogpgy" method="POST" class="max-w-lg mx-auto space-y-4"
+            data-aos="fade-up" data-aos-delay="400">
+            <input type="text" name="name" placeholder="Your Name" required
+                class="w-full p-3 rounded-lg bg-[#0b0b0b] border border-gray-700 text-white" />
+            <input type="email" name="email" placeholder="Your Email" required
+                class="w-full p-3 rounded-lg bg-[#0b0b0b] border border-gray-700 text-white" />
+            <textarea name="message" placeholder="Your Message" required
+                class="w-full p-3 rounded-lg bg-[#0b0b0b] border border-gray-700 text-white h-32"></textarea>
+            <button type="submit"
+                class="bg-[#c5a572] glow text-black font-semibold px-8 py-3 rounded-full transition hover:bg-[#e4c989]">
+                Send Message
+            </button>
+        </form>
+        <p class="text-gray-500 text-sm mt-6">We’ll get back to you within 24 hours.</p>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-6 text-center text-gray-500 text-sm border-t border-gray-800">
+        © 2025 LuméAI. Smart Automation for Stylish Brands.
+    </footer>
+
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+        });
+    </script>
+</body>
+
+</html>
